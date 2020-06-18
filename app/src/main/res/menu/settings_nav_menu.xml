@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_mood_black_24dp"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/classes"
+        android:icon="@drawable/ic_library_books_black_24dp"
+        android:title="Classes" />
+
+
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_info_outline_black_24dp"
+        android:title="About" />
+
+
+</menu>

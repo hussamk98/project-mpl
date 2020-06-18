@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage Classes!"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="italic|bold"
+        />
+
+    <TextView
+        android:id="@+id/joinclass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Joined Classes"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rel1"
+        android:layout_weight="1"
+        app:layout_constraintTop_toBottomOf="@id/joinclass"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="60dp">
+        <FrameLayout
+            android:id="@+id/frame4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/list_joinedclasses"></ListView>
+
+        </FrameLayout>
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/myclass"
+        app:layout_constraintTop_toBottomOf="@+id/rel1" />
+
+    <TextView
+        android:id="@+id/myclass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="My Classes"
+        android:layout_marginBottom="2dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rel1" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+
+        app:layout_constraintTop_toBottomOf="@id/myclass"
+        tools:layout_editor_absoluteX="8dp">
+
+        <FrameLayout
+            android:id="@+id/frame5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/list_myclasses"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

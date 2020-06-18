@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".getAnnouncements">
+
+    <TextView
+        android:id="@+id/textview_showclasses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Announcements"
+        android:textColor="#d872"
+        android:gravity="center"
+        android:textSize="28dp"
+        android:textStyle="italic|bold"
+        />
+    <FrameLayout
+        android:id="@+id/frame6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/list_getAnnouncements"
+            android:layout_width="match_parent"
+            android:listSelector="@android:color/transparent"
+            android:dividerHeight="2dp"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>
